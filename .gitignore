@@ -1,0 +1,5 @@
+# Don't track .env file or Python cache files
+.env
+__pycache__/
+*.pyc
+*.pyo

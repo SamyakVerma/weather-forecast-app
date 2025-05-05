@@ -5,9 +5,14 @@ from tkinter import messagebox, scrolledtext
 from tkinter.font import Font
 from PIL import Image, ImageTk
 import io
+import os
+from dotenv import load_dotenv
+
+# Load API key from .env
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
 
 # Constants
-API_KEY = "b514e73d27d1ac914b05c7f85fbb363d"
 BASE_URL = "https://api.openweathermap.org/data/2.5/forecast"
 
 # Utility Functions
